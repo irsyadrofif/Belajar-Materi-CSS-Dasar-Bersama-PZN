@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribut</title>
+    <style>
+        /*yang memiliki target blank*/
+        a[target="_blank"] {
+            color: red
+        }
+        /*ada kata belajar yg anu*/
+        p[title|="belajar"] {
+            color: blue;
+        }
+        /*berawalan belajar*/
+        h4[title^="belajar"] {
+            color: greenyellow;
+        }
+        /*berakhiran belajar*/
+        h5[title$="belajar"] {
+            background-color: goldenrod;
+        }
+        /*memilih semuanya*/
+        span[title*="belajar"] {
+            text-shadow: 4px 6px 5px;
+        }
+
+        /*memilih semua atribut title isinya belajar
+        title*="belajar"] {
+           color: red;
+        }
+        ambil semua class article dengan punya title belajar
+        .article[title*="belajar"] {
+           color:blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">contoh 1</a><br>
+    <a href="">contoh 2</a><br>
+    <a href="" target="_blank">contoh 3</a><br>
+    <a href="">contoh 4</a><br>
+    <a href="" target="_self">contoh 4</a><br>
+    <a href="" target="_self">contoh 4</a><br>
+
+    <p title="belajar">ini dipilih</p>
+    <p title="belajar coding">ini tidak dipilih</p>
+    <p title="belajarcoding">ini tidak dipilih</p>
+    <p title="belajar-coding">ini dipilih</p>
+
+
+    <br><br><br>
+    <h4 title="belajar">ini dipilih</h4>
+    <h4 title="belajar-coding">ini dipilih</h4>
+    <h4 title="belajar_coding">ini dipilih</h4>
+    <h4 title="belajar coding">ini dipilih</h4>
+    <h4 title="coding belajar">ini dipilih</h4>
+    <br><br><br>
+
+
+
+    <h5 title="belajar">ini dipilih</h5>
+    <h5 title="belajar-coding">ini tidak dipilih</h5>
+    <h5 title="belajar_coding">ini tidak dipilih</h5>
+    <h5 title="belajar coding">ini tidak dipilih</h5>
+    <h5 title="coding belajar">ini dipilih</h5>
+    <br><br><br>
+
+    <span title="belajar">ini dipilih</span><br>
+    <span title="belajar">ini dipilih</span><br>
+    <span title="coding belajar tengah">ini dipilih</span><br>
+    <span title="coba-belajar">ini dipilih</span><br>
+    <span title="coba_belajar">ini dipilih</span><br>
+    <span title="cobabelajar">ini dipilih</span><br>
+    <span title="coba belajar">ini dipilih</span>
+</body>
+</html>

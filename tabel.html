@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabel</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border-style: solid;
+        margin: 0px;
+        padding: 0px;
+        border-collapse: collapse; /*biar gaada jarak antar garis border*/
+
+        border-width: 1px;
+      }
+      table {
+        width: 200px;
+        height: 200px;
+      }
+      th {
+        text-align: left;
+      }
+      td {
+        text-align: center;
+      }
+      tr:hover {
+        background-color: aqua;
+      } /*Ketika kursor diarahkan berubah interaksi*/
+      .ganjil {
+        background-color: blue;
+      }
+      .genap {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="genap">
+          <td>Irsyad</td>
+          <td>100</td>
+        </tr>
+        <tr class="ganjil">
+          <td>Irsyad</td>
+          <td>100</td>
+        </tr>
+        <tr class="genap">
+          <td class="genap">Irsyad</td>
+          <td>100</td>
+        </tr>
+        <tr class="ganjil">
+          <td>Irsyad</td>
+          <td>100</td>
+        </tr>
+        <tr class="genap">
+          <td>Irsyad</td>
+          <td>100</td>
+        </tr>
+        <tr class="ganjil">
+          <td>Irsyad</td>
+          <td>100</td>
+        </tr>
+        <tr class="genap">
+          <td>Irsyad</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

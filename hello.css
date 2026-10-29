@@ -1,0 +1,14 @@
+/*ini komentarnya CSS satu baris*/
+h1 {
+    color: blueviolet;
+    font-size: 20px;
+}
+/*
+ini aalah komentar
+multi baris
+*/
+h2 {
+    color: chartreuse;
+    font-size: 15px;
+}
+
